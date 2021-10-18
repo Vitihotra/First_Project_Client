@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700&family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Montserrat:ital,wght@1,500&display=swap');
+/* CSS reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Baloo Bhai 2', cursive; */
+    /* font-family: 'Bree Serif', serif; */
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+
+:root {
+    --navbar-height: 59px
+}
+
+/* Navigation Bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+    justify-content: space-between;
+    /* justify-content: center; */
+    /* background-color: seagreen; */
+}
+
+/* Home Section */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 1em 10em;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/backgrounds/background_main.jpg') no-repeat center center;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.54;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray;
+}
+
+#home h1 {
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    background: none;
+}
+
+#home p {
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Bree Serif', serif;
+}
+
+/* Services section */
+
+#services-container {
+    /* background-color: red; */
+    margin-top: 18px;
+}
+
+#services {
+    margin: 16px;
+    display: flex;
+}
+
+#services .box {
+    /* border: 2px solid rgb(247, 152, 152); */
+    margin: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 8px 0 gray;
+}
+
+#services .box img {
+    height: 156px;
+    width: 242px;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+#services .box p {
+    font-family: 'Bree Serif', serif;
+}
+
+/* Client section */
+
+#client-section {
+    height: 60vh;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    /* background:url('../img/backgrounds/background_second.jpg'); */
+    width: 100%;
+    height: 59%;
+    z-index: -1;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray; */
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.client-item {
+    padding: 3vh 5vh;
+    margin-top: 1vh;
+}
+
+#clients img {
+    height: 124px;
+    width: 175px;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray;
+}
+
+/* About us sectonn */
+
+#about-us::before {
+    content: "";
+    position: absolute;
+    /* background: rgb(219, 206, 206); */
+    /* url('../img/backgrounds/background_second.jpg'); */
+    width: 100%;
+    height: 71%;
+    z-index: -1;
+    opacity: 0.6;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.aboutus-container {
+    display: flex;
+}
+
+#md-img {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    height: 10%;
+    /* border: 2px solid brown; */
+    margin: 6px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray;
+    padding: 10px;
+}
+
+#md-img img {
+    /* border: 8px solid rgb(248, 237, 187); */
+    border-radius: 50%;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray;
+}
+
+#md-img h3 {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+#md-img p {
+    font-family: 'Bree Serif', serif;
+}
+
+#about-info {
+    /* border: 2px solid brown; */
+    margin: 6px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray;
+}
+
+#about-info p {
+    font-family: 'Bree Serif', serif;
+}
+
+#about-info h2 {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-bottom: 1rem;
+    background-color: #EEBF00;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0px 12px;
+}
+
+#about-info h3 {
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+/* Contact Us section */
+
+#contact-us {
+    height: 38em;
+}
+
+.contact-info-wrapper {
+    flex: 1;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray;
+    margin: 0 20px;
+    border-radius: 1.1em;
+}
+
+.contact-info-flex {
+    display: flex;
+}
+
+.contact-info-wrapper h1{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-bottom: 1rem;
+    background-color: #EEBF00;
+    /* display: flex; */
+    border-radius: 0.5em;
+    padding: 0px 12px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info>div>div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 0.5em 6em;
+}
+
+.contact-info>div>div img {
+    margin-right: 1rem;
+    width: 34px;
+}
+
+.contact-info>div>div>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info>div>div>div span:first-child {
+    font-family: 'Bree Serif', serif;
+    margin-bottom: 0.25rem;
+}
+
+/* Footer section */
+
+footer {
+    background-color: rgb(12, 11, 11);
+}
+
+.footer-container {
+    display: flex;
+    color: white;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray;
+}
+
+.footer-container .container-box ul {
+    list-style-type: none;
+}
+
+.footer-container h3 {
+    font-family: 'Baloo Bhai 2', cursive;
+    border-bottom: 1px solid #EEBF00;
+    padding-bottom: 1rem;
+    margin: 1rem 18px;
+}
+
+.footer-container p {
+    font-family: 'Baloo Bhai 2', cursive;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.footer-container .container-box ul li a {
+    font-family: 'Bree Serif', serif;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container .container-box ul li a:hover {
+    color: rgb(126, 121, 121);
+    font-family: 'Bree Serif', serif;
+}
+
+.footer-container .container-box ul li a img {
+    width: 24px;
+}
+
+.footer-container .container-box ul li {
+    margin-bottom: 1rem;
+}
+
+.footer-container .container-box:nth-child(3)>div {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container .container-box:nth-child(3) {
+    text-align: left;
+}
+
+.footer-container .container-box:nth-child(3) h3 {
+    text-align: center;
+}
+
+.footer-container .container-box:nth-child(3)>div img {
+    margin-right: 1rem;
+}
+
+.container-box {
+    flex: 1;
+    margin-right: 2rem;
+    text-align: center;
+}
+
+/* Copyright section */
+
+footer.copyright {
+    padding: 1rem 0;
+    background-color: black;
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
+
+footer.copyright a {
+    font-family: cursive;
+    text-decoration: none;
+    color: #EEBF00;
+}
+
+/* Utility Classes */
+
+.t-primary {
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 2.8rem;
+    padding: 0.7em;
+    background: url("../img/icons/svgs/regular/hr.svg") no-repeat center bottom;
+}
+
+.t-primary h1 {
+    color: blue;
+    /* text-decoration: underline #EEBF00 4px;
+    text-underline-offset: 13px; */
+}
+
+.t-secondary {
+    font-family: 'Bree Serif', serif;
+    font-size: 2.2rem;
+    background-color: #EEBF00;
+    border-radius: 1.1em;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solide black;
+    background-color: rgb(6, 83, 94);
+    color: white;
+    margin: 2vh 5vh;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.t-link {
+    text-decoration: none;
+    color: rgb(17, 36, 146);
+    font-weight: 900;
+}
+
+.center {
+    text-align: center;
+    justify-content: center;
+}
+

@@ -1,0 +1,147 @@
+
+/* Home section */
+
+#home h1.t-primary{
+    font-size: 2.2rem;
+    width: fit-content;
+}
+
+#home p{
+    /* width: 100vh; */
+    font-size: 1.2rem;
+    width: 75vw;
+}
+
+#home .btn{
+    width:max-content;
+}
+
+/* services section */
+
+#services{
+    flex-direction: column;
+}
+
+#services .box img {
+    height: 75px;
+    margin: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+/* client section */
+
+#clients{
+    flex-wrap: wrap;
+    overflow:hidden;
+}
+
+#clients img {
+    height: 75px;
+    width: 100px;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray;
+}
+
+.client-item {
+    padding: 25px 10px;
+}
+
+/* about-us section */
+.aboutus-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+#md-img {
+    display: flex;
+    flex-flow: column;
+    width: 24vh;
+    height: 48vh;
+    /* border: 2px solid brown; */
+    margin: 6px;
+    border-radius: 10px;
+    /* box-shadow: 0px 2px 4px 0 grey, 0px 8px 20px 0 grey; */
+    box-shadow: none;
+    padding: 10px;
+    justify-content: center;
+    align-self: center;
+}
+
+#md-img p {
+    width: max-content;
+}
+
+#about-info {
+    width: 68vh;
+    padding: 0em;
+    border-radius: 1em;
+}
+
+#about-info h2{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-bottom: 1rem;
+    background-color: #EEBF00;
+    display: flex;
+    border-radius: 0.5em 0.5em 0em 0em;
+    padding: 0em 0.6em;
+    justify-content: center;
+}
+
+#about-info p {
+    justify-content: center;
+    align-items: center;
+    padding: -1px 110px;
+}
+
+
+/* contact-us section */
+#contact-us {
+    height: 62em;
+}
+
+.contact-info-flex {
+    flex-direction: column;
+    margin: 0.4em 0em;
+    
+}
+
+.contact-info-wrapper{
+    /* flex: 1;
+    box-shadow: 0px 2px 4px 0 gray, 0px 8px 20px 0 gray; */
+    margin: 10px 20px;
+    border-radius: 1.1em;
+}
+
+.contact-info-wrapper h1{
+    font-family: 'Baloo Bhai 2', cursive;
+    margin-bottom: 1rem;
+    background-color: #EEBF00;
+    display: flex;
+    border-radius: 0.5em 0.5em 0em 0em;
+    padding: 0em 0.6em;
+
+}
+
+.contact-info>div>div {
+    margin-bottom: 6vh;
+    padding: 0.2em 2em;
+}
+
+/* footer section */
+
+.footer-container {
+   flex-direction: column;
+}
+
+.footer-container h3 {
+    border-top: 1px solid #EEBF00;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5em;
+    margin-left: 2.5rem;
+}
+
+/* Utility Class */
+
+.t-primary{
+    font-size: 2.2rem;
+}

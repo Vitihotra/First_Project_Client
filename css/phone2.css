@@ -1,0 +1,59 @@
+/* Home section */
+/* #home{
+    flex: 1;
+} */
+
+#home h1.t-primary{
+    font-size: 1.8rem;
+    padding-bottom: 6vh;
+    width: fit-content;
+}
+
+#home p{
+    font-size: 0.9rem;
+    width: 22em;
+}
+
+/* Services section */
+
+#services .box img {
+    height: 10vh;
+}
+
+/* Client section */
+#client-section {
+    height: 60vh;
+    display: block;
+}
+
+.client-item {
+    padding: 0px 5px;
+    margin-top: 18px;
+}
+/* about section */
+
+#about-info {
+    width: 22em;
+    align-self: center;
+    justify-self: center;
+}
+
+#about-info P{
+    text-align: center;
+}
+
+/* Contact section */
+
+#contact-us {
+    height: 60em;
+}
+/* utility classes */
+.t-primary h1 {
+    font-size: 2.8rem;
+    /* padding-bottom: 2vh; */
+}
+
+.t-secondary{
+    font-size: 1.5rem;
+}
+
